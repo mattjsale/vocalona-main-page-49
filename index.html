@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vocalona-voice-agent-hub</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
+
+    <meta property="og:title" content="vocalona-voice-agent-hub" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    
+    <!-- Add Vapi Widget -->
+    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+    
+    <vapi-widget 
+      mode="voice" 
+      theme="dark" 
+      base-color="#000000" 
+      accent-color="#14B8A6" 
+      button-base-color="#000000" 
+      button-accent-color="#ffffff" 
+      radius="large" 
+      size="full" 
+      position="bottom-right" 
+      main-label="Vocalona AI Assistant" 
+      start-button-text="Start" 
+      end-button-text="End Call" 
+      require-consent="true" 
+      local-storage-key="vapi_widget_consent" 
+      show-transcript="true" 
+      public-key="95716f15-df6f-49c9-a023-4a752e9be73f" 
+      assistant-id="b0c04427-8c52-4e96-bdb7-25d2ef077ed6">
+    </vapi-widget>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
